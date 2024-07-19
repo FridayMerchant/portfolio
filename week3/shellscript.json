@@ -1,0 +1,14 @@
+{
+	"add a shebang": { 
+   
+	 "prefix": "#!", 
+   
+	 "body": [ 
+   
+	 "#!/bin/bash" 
+   
+	 ], 
+   
+	 "description": "Add shebang to script" 
+   
+}
