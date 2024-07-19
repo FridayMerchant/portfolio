@@ -15,3 +15,4 @@ echo "$passwordHash" > "$folderName/secret.txt"
 echo
 echo "Password hash saved in '$folderName/secret.txt'."
 
+
