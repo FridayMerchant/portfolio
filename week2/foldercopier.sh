@@ -15,3 +15,4 @@ else
     # This will print an error message if the folder doesn't exist
     echo "Error: '$folderName' is not a valid folder."
 fi
+
