@@ -33,3 +33,4 @@ for length in range(1, max_length + 1):
     break  
 else:
     print("Password not found in the given range.")
+
