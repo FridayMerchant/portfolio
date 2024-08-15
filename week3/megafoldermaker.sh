@@ -1,6 +1,6 @@
 #!/bin/bash 
       
-#If there aren't two arguments to the script 
+#if there isnt two arguments
       
 if (( $#!=2 )); then 
       
@@ -10,13 +10,13 @@ if (( $#!=2 )); then
       
 fi 
       
-#For every number between the first argument and the last 
+#every number between the first argument and the last 
       
 for ((i = $1; i <= $2; i++)) 
       
 do 
       
-    #Create a new folder for that number 
+    #create a new folder for that number 
       
     echo "Creating directory number $i" 
       
