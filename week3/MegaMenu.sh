@@ -1,18 +1,18 @@
 #!/bin/bash
 
-# Define color codes
+#Colours
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 BLUE='\033[1;34m'
 RESET='\033[0m' # Reset to default color
 
-# Function to print headers
+#print headers
 print_header() {
     echo -e "${BLUE}$1${RESET}"
 }
 
-# Function to print menu options
+#menu options
 print_menu() {
     print_header "Select an option:"
     echo -e "${YELLOW}1. Create a folder${RESET}"
@@ -25,7 +25,7 @@ print_menu() {
     echo -e "${RED}8. Exit${RESET}"
 }
 
-# Verify password
+#verify password
 ./passwordCheck.sh
 if [ $? -eq 0 ]; then
     echo -e "${GREEN}Password verification successful.${RESET}"
