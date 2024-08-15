@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Check if the input file is provided
+#Check input file
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <file>"
     exit 1
@@ -8,29 +8,29 @@ fi
 
 input_file=$1
 
-# Check if the input file exists
+#Checkinput file
 if [ ! -f "$input_file" ]; then
     echo "File $input_file does not exist."
     exit 1
 fi
 
-# Read the file line by line
+#read the file line by line
 while IFS= read -r line
 do
-    # Trim leading and trailing whitespace
+    #trim space
     line=$(echo "$line" | xargs)
     
-    # Skip empty lines
+    #skip empty lines
     if [ -z "$line" ]; then
         continue
     fi
 
     echo "Checking: $line"
 
-    # Check if it is a directory
+    #check if it is a directory
     if [ -d "$line" ]; then
         echo "$line is a directory"
-    # Check if it is a file
+    #check if it is a file
     elif [ -f "$line" ]; then
         echo "$line is a file"
     else
