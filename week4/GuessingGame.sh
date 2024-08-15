@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Function to get the users numbers inputted
+#users numbers input
 getNumber() {
     local number
     read -p "Enter a number between 1 and 100: " number
     echo $number
 }
 
-# Main script part
+#main script
 target=42
 guess=0
 
