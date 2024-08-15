@@ -2,7 +2,7 @@
       
  
       
-#This function prints a given error 
+#this function prints a error 
       
 printError() 
       
@@ -14,7 +14,7 @@ printError()
       
  
       
-#This function will get a value between the 2nd and 3rd arguments 
+#this function will get a value between the 2nd and 3rd arguments 
       
 getNumber() 
       
