@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Define color variables
+#colours
 BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 RED='\033[0;31m'
 PURPLE='\033[0;35m'
 RESET='\033[0m'  # No color
 
-# Function to display menu
+#display menu
 display_menu() {
     echo "Select operation:"
     echo "1. Addition"
@@ -16,7 +16,7 @@ display_menu() {
     echo "4. Division"
 }
 
-# Function to read input and perform calculations
+#calculations
 perform_calculation() {
     local operation=$1
     local num1=$2
@@ -49,7 +49,7 @@ perform_calculation() {
     esac
 }
 
-# Main script logic
+#main script
 while true; do
     display_menu
     read -p "Enter your choice (1-4): " operation
